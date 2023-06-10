@@ -1,23 +1,11 @@
 #include <iostream>
 #include <stdlib.h> 
-#include <string> 
 
 using namespace std;
-
-struct FichaJugador{
-    int Velocidad;
-    int Tiro;
-    int Regate;
-    int Defensa;          
-    int Pase;
-    int Fisico;        
-};
-
 
 void Menu();
 int LanzarDado();
 void Comparar(int);
-void Tipoview(string);
 
 int main(){
     cout << "TP1 Algoritmos" << endl;
@@ -49,34 +37,29 @@ int LanzarDado(){
     return (1 + rand() % 6); // min = 1  y el max = 6 (Includos los 2)
 };
 
-void Tipoview(string tipodato){
-    cout << "Ha salido "<< tipodato<< endl;
-};
-
 
 void Comparar(int radomnum){
     string tipo;
-    cout << "Cara del dado = "<< radomnum << endl;
+    //cout << "Cara del dado = "<< radomnum << endl;
     switch (radomnum){
     case 1:
-            tipo = "Velocidad";
+            cout << "Ha salido Velocidad"<< endl;
         break;
     case 2:
-            tipo = "Tiro";
+            cout << "Ha salido Tiro"<< endl;
         break;
     case 3:
-            tipo = "Regate";
+            cout << "Ha salido Regate"<< endl;
         break;
     case 4:
-            tipo = "Defensa";
+            cout << "Ha salido Defensa"<< endl;
         break;
     case 5:
-            tipo = "Pase";
+            cout << "Ha salido Pase"<< endl;
         break;
     case 6:
-            tipo = "Fisico";
+            cout << "Ha salido Fisico"<< endl;
         break;        
     default:break;
     }
-    Tipoview(tipo);
 };
