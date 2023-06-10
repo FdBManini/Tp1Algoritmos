@@ -39,7 +39,6 @@ int LanzarDado(){
 
 
 void Comparar(int radomnum){
-    string tipo;
     //cout << "Cara del dado = "<< radomnum << endl;
     switch (radomnum){
     case 1:
